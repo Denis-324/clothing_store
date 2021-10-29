@@ -1,0 +1,527 @@
+// Миксин отзывчивый адаптив
+@import "adaptiv-value";
+//обнуление
+@import "nullstyle";
+
+$ff-m: "Montserrat", sans-serif;
+$text: #151719;
+
+body {
+  color: $text;
+  font-size: 14px;
+  font-family: $ff-m;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 1 auto;
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.content {
+  margin-top: 93px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  @media (max-width: 839px) {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 15px;
+  }
+  @media (max-width: 564px) {
+    grid-template-columns: 1fr;
+  }
+}
+.container {
+  max-width: 1220px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+//================================================
+.header {
+  &__container {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    min-height: 90px;
+    justify-content: space-between;
+  }
+
+  &__phone {
+    a {
+      font-size: 16px;
+      font-family: $ff-m;
+      color: $text;
+      font-weight: 500;
+    }
+    @media (max-width: 632px) {
+      display: none;
+    }
+  }
+
+  &__logo {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    @media (max-width: 632px) {
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+    @media (max-width: 330px) {
+      font-size: 27px;
+    }
+  }
+
+  &__cart {
+  }
+
+  &__cart-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-top: 1px solid rgb(192, 194, 196);
+    border-bottom: 1px solid rgb(192, 194, 196);
+    border-left: 1px solid rgb(192, 194, 196);
+    transition: all ease 0.2s;
+    @media (max-width: 632px) {
+      height: 35px;
+    }
+  }
+
+  &__cart-title {
+    padding: 10px;
+    @media (max-width: 330px) {
+      padding: 5px;
+    }
+  }
+
+  &__cart-img-body {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-right: 1px solid rgb(192, 194, 196);
+    border-left: 1px solid rgb(192, 194, 196);
+    transition: all ease 0.2s;
+    @media (max-width: 632px) {
+      height: 35px;
+    }
+  }
+
+  &__cart-img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: url("../img/cart.svg") 0 0 / contain no-repeat;
+    @media (max-width: 632px) {
+      height: 22px;
+      width: 22px;
+    }
+    span {
+      position: absolute;
+      right: -2px;
+      top: -3px;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-color: steelblue;
+      border-radius: 50%;
+      color: rgb(248, 241, 248);
+      font-size: 12px;
+      text-align: center;
+      padding-top: 4px;
+      @media (max-width: 632px) {
+        height: 15px;
+        width: 15px;
+        font-size: 10px;
+        padding-top: 3px;
+      }
+    }
+  }
+
+  &__cart:hover &__cart-body {
+    border-radius: 20px;
+    transition: all ease 0.2s;
+  }
+  &__cart:hover &__cart-img-body {
+    border-radius: 0px 20px 20px 0px;
+    transition: all ease 0.2s;
+  }
+}
+//================================================
+.footer {
+  margin-top: 20px;
+  background-color: rgb(76, 147, 206);
+  min-height: 70px;
+  @include adaptiv-value("min-height", 70, 50, 1);
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__contscts {
+    min-height: 70px;
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    @include adaptiv-value("min-height", 70, 50, 1);
+  }
+
+  &__phone {
+    font-size: 16px;
+    font-family: $ff-m;
+    color: whitesmoke;
+    font-weight: 500;
+  }
+
+  &__instagram {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/instagram-dark.svg") center no-repeat;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__vk {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/vk-dark.svg") center no-repeat;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__facebook {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/fb-dark.svg") center no-repeat;
+    transition: all 0.3s ease 0s;
+  }
+  &__instagram:hover,
+  &__vk:hover,
+  &__facebook:hover {
+    border-radius: 50%;
+    transform: scale(1.4);
+    transition: all 0.3s ease 0s;
+  }
+}
+//================================================
+.menu {
+  margin-top: 50px;
+  @media (max-width: 632px) {
+    margin-top: 17px;
+  }
+  @media (max-width: 468px) {
+    box-shadow: 2px 2px 5px 5px rgba(155, 169, 218, 0.2);
+    padding: 10px;
+    margin-top: 0px;
+  }
+
+  &__container {
+    max-width: 1120px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    @media (max-width: 839px) {
+      flex-direction: column;
+    }
+
+    li {
+      margin: 0 20px 0 0;
+      @media (max-width: 839px) {
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+  &__link {
+    color: #151719;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    white-space: nowrap;
+    @media (max-width: 468px) {
+      font-size: 13px;
+    }
+  }
+
+  &__link:hover {
+    color: #7f8d9b;
+    transition: all 0.2s ease 0s;
+  }
+
+  &__link_lh {
+    line-height: 1.8;
+  }
+  &__sort {
+    position: relative;
+  }
+  &__sort-subtitle {
+    margin-left: 5px;
+    color: #151719;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    font-weight: 600;
+    white-space: nowrap;
+    position: relative;
+    @media (max-width: 468px) {
+      font-size: 13px;
+    }
+  }
+
+  &__sort-title {
+    @media (max-width: 468px) {
+      display: none;
+    }
+  }
+  &__sort-subtitle::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -140px;
+    width: 9px;
+    height: 9px;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: rotate(45deg);
+    @media (max-width: 468px) {
+      left: -17px;
+      top: 1.5px;
+    }
+  }
+  &__sort-popup {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(155, 169, 218, 0.2);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+//================================================
+.section {
+  &__card {
+    padding: 15px;
+    border: 1px solid rgb(207, 203, 203);
+    border-radius: 5px;
+  }
+
+  &__card-img {
+    width: 220px;
+    height: 300px;
+  }
+  &__card-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__card-title {
+    margin-top: 10px;
+  }
+
+  &__card-price {
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__card-size {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  &__card-size-item {
+    max-width: 65px;
+    width: 100%;
+    padding: 5px 0 5px 0;
+    background-color: rgb(158, 168, 177);
+    font-weight: 500;
+  }
+  &__card-size-item:hover {
+    background-color: rgb(209, 206, 212);
+    transition: all 0.2s ease 0s;
+  }
+  &__card-size-item_active {
+    background-color: rgb(209, 206, 212);
+  }
+  &__card-btn {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: rgb(76, 147, 206);
+  }
+  &__card-btn:hover {
+    background-color: rgb(104, 165, 214);
+    transition: all 0.2s ease 0s;
+  }
+}
+//================================================
+.empty-cart {
+  &__title {
+    font-size: 30px;
+    font-weight: 500;
+    color: rgba(64, 71, 97, 0.2);
+    margin-bottom: 40px;
+    margin-top: 50px;
+    @media (max-width: 400px) {
+      font-size: 22px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background: url("../img/emptyСart.png") 0 0 / cover no-repeat;
+    @media (max-width: 400px) {
+      width: 240px;
+      height: 240px;
+    }
+  }
+}
+//================================================
+.full-cart {
+  margin-top: 40px;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 2px 2px 5px 5px rgba(155, 169, 218, 0.2);
+    margin-bottom: 40px;
+    width: 600px;
+  }
+
+  &__item-img {
+    width: 100px;
+    height: 100px;
+  }
+  &__item-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__item-text {
+    margin-left: 10px;
+    flex: 1 1 auto;
+  }
+
+  &__item-title {
+    font-weight: 400;
+    white-space: nowrap;
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__item-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+
+  &__item-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 15px;
+  }
+
+  &__item-count-minus {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(190, 193, 196);
+    font-size: 16px;
+  }
+  &__item-count-minus:hover {
+    background-color: rgb(209, 206, 212);
+    transition: all 0.1s ease 0s;
+  }
+
+  &__item-count-item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 5px 0 5px;
+  }
+
+  &__item-count-plus {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: rgb(190, 193, 196);
+  }
+  &__item-count-plus:hover {
+    background-color: rgb(209, 206, 212);
+    transition: all 0.1s ease 0s;
+  }
+
+  &__item-price {
+    margin-left: 15px;
+    font-weight: 500;
+  }
+
+  &__item-delite {
+    width: 22px;
+    height: 22px;
+    background: url("../img/delete.svg") 0 0 / cover no-repeat;
+    margin-left: 15px;
+  }
+}
+.total {
+  &__count {
+  }
+
+  &__sum {
+    margin-top: 10px;
+  }
+}
+.payment-btn {
+  margin-top: 15px;
+  width: 200px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: rgb(76, 147, 206);
+}
+.payment-btn:hover {
+  background-color: rgb(104, 165, 214);
+  transition: all 0.2s ease 0s;
+}
