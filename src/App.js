@@ -1,21 +1,19 @@
 import React from "react";
 import { Route } from "react-router-dom";
+import axios from "axios";
+import { Footer, Header } from "./component";
 
-import Footer from "./component/Footer";
-import Header from "./component/Header";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 
 function App() {
   const [goods, setGoods] = React.useState([]);
   React.useEffect(() => {
-    fetch("http://localhost:3000/db.json")
-      .then((resp) => resp.json())
-      .then((json) => {
-        setGoods(json.goods);
-      });
+    axios.get("http://localhost:3000/db.json").then(({ data }) => {
+      setGoods(data.goods);
+    });
   }, []);
-  console.log(goods);
+
   return (
     <>
       <div className="wrapper">

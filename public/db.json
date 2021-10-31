@@ -4,201 +4,161 @@
        "id": 0,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fb2%2Ff4%2Fb2f4d372a3e280f4f52115af885a67d9f2655425.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/fullscreen]",
        "name": "Футболка Slim из хлопка ",
-       "types": [0, 1],
        "sizes": ["M", "S", "L"],
        "price": 1190,
-       "category": 0,
-       "rating": 4
+       "category": 0
      },
      {
        "id": 1,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F1e%2F15%2F1e154208e1403b81f31716fc62f540a67ae68669.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Упаковка 3 футболки Slim",
-       "types": [0],
        "sizes": ["M", "S", "L"],
        "price": 1699,
-       "category": 1,
-       "rating": 6
+       "category": 0
      },
      {
        "id": 2,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd5%2Fbb%2Fd5bbd45bd128eaa9d9198ff3225a5cdff7fdaae5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Футболка из хлопка премиум",
-       "types": [0],
        "sizes": ["M", "S", "L"],
        "price": 1199,
-       "category": 1,
-       "rating": 4
+       "category": 0
      },
      {
        "id": 3,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F25%2F5c%2F255c275452054258c4fd9eeb34d08ae0e7c30c57.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_tshirtstanks_shortsleeve%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Футболка Relaxed Fit",
-       "types": [1],
        "sizes": ["M", "S", "L"],
        "price": 899,
-       "category": 2,
-       "rating": 2
+       "category": 0
      },
      {
        "id": 4,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F76%2F31%2F7631b5ab1d6ed501e8435d98c38e0f52c94d072b.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Упаковка 2 худи Relaxed Fit",
-       "types": [0, 1],
        "sizes": ["M", "S", "L"],
        "price": 3499,
-       "category": 3,
-       "rating": 8
+       "category": 1
      },
      {
        "id": 5,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F7c%2F86%2F7c8693b5730eb35bf96e723e5d32aa0dd665d5a2.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Худи из хлопка",
-       "types": [0],
        "sizes": ["M", "S", "L"],
        "price": 2799,
-       "category": 2,
-       "rating": 2
+       "category": 1
      },
      {
        "id": 6,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F6d%2F27%2F6d2725b57947dc78fa9dde5abe5e2731830f8c89.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Худи",
-       "types": [0, 1],
        "sizes": ["M", "S", "L"],
        "price": 1699,
-       "category": 1,
-       "rating": 9
+       "category": 1
      },
      {
        "id": 7,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F42%2F5a%2F425a41ab6eb400de9c83ef09be742e91d8a533a5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Худи из флиса",
-       "types": [0, 1],
        "sizes": ["M", "S", "L"],
        "price": 2799,
-       "category": 4,
-       "rating": 10
+       "category": 1
      },
      {
        "id": 8,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F62%2F03%2F62036d7d26dc2d8e0214297023c1f99537a5bba6.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5Bmen_shorts_casual%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Хлопковые шорты-чиносы",
-       "types": [0, 1],
        "sizes": ["M", "S", "L"],
        "price": 1599,
-       "category": 5,
-       "rating": 10
+       "category": 2
      },
      {
        "id": 9,
        "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F93%2F56%2F93562e6f0afaab44924a59c15d28e7bb6537498c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
        "name": "Шорты для активного отдыха",
-       "types": [0, 1],
        "sizes": ["M", "S", "L"],
        "price": 1999,
-       "category": 5,
-       "rating": 7
+       "category": 2
      },
      {
         "id": 10,
         "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fd9%2Fd9%2Fd9d9b22e1c2b3547ccbcb604e4eb9f899a8cfdc5.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
         "name": "Байковые шорты Regular Fit",
-        "types": [0, 1],
         "sizes": ["M", "S", "L"],
         "price": 1199,
-        "category": 5,
-        "rating": 7
+        "category": 2
     },
     {
       "id": 11,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F80%2F27%2F80275655d99fbc2a857177c47f6cd43d9fcaef41.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Шорты для бега",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 1699,
-      "category": 5,
-      "rating": 7
+      "category": 2
     },
     {
       "id": 12,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff5%2F32%2Ff53239e8f4945f37079cf981f1ed448ebb53132e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Джинсы Loose",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 2299,
-      "category": 5,
-      "rating": 7
+      "category": 3
     },
     {
       "id": 13,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe3%2F71%2Fe37146fe7eed2f58e6b91d95ba033d149e11de95.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Джинсы Freefit® Slim",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 3999,
-      "category": 5,
-      "rating": 7
+      "category": 3
     },
     {
       "id": 14,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe3%2F35%2Fe335863e52775f251919a16fa5d3be303452014e.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Джоггеры Hybrid Regular",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 3299,
-      "category": 5,
-      "rating": 7
+      "category": 3
     },
     {
       "id": 15,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fba%2F25%2Fba253f55fa4b778c4a9404191886e954dbccf538.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Джинсы Fit на резинке",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 1999,
-      "category": 5,
-      "rating": 7
+      "category": 3
     },
     {
       "id": 16,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Ff9%2Ff0%2Ff9f02cd993e881678659ff2645d0352f72ce244c.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Утепленная куртка",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 2299,
-      "category": 5,
-      "rating": 7
+      "category": 4
     },
     {
       "id": 17,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F07%2F44%2F0744c739647d9b334094982ccc7c7d22ebd090bc.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Куртка из плюша Regular",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 2799,
-      "category": 5,
-      "rating": 7
+      "category": 4
     },
     {
       "id": 18,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2F47%2F99%2F47990970ff94e908aed2f824b9d3c92bf8c8b754.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Куртка-рубашка",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 4499,
-      "category": 5,
-      "rating": 7
+      "category": 4
     },
     {
       "id": 19,
       "imageUrl": "https://lp2.hm.com/hmgoepprod?set=quality%5B79%5D%2Csource%5B%2Fe9%2Ff8%2Fe9f893569d7c3aa4a0abee81be9db0b77506b461.jpg%5D%2Corigin%5Bdam%5D%2Ccategory%5B%5D%2Ctype%5BLOOKBOOK%5D%2Cres%5Bm%5D%2Chmver%5B1%5D&call=url[file:/product/main]",
       "name": "Вельветовая куртка",
-      "types": [0, 1],
       "sizes": ["M", "S", "L"],
       "price": 3999,
-      "category": 5,
-      "rating": 7
+      "category": 4
     }
    ]
  }

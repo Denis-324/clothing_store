@@ -1,9 +1,18 @@
+import classNames from "classnames";
 import React from "react";
-import tShits2 from '../img/goods/tShits2.jpg'
+import propTypes from 'prop-types'
 
 
 
-function CardBlok({name, imageUrl}) {
+function CardBlok({name, imageUrl, price, sizes}) {
+
+  const [activeSize, setAciveSize] = React.useState([0])
+
+  //функция для выбора рахмера товара
+  const onSelectSize = (index) => {
+    setAciveSize(index)
+  }
+
   return (
    
    <section class="section__card">
@@ -12,15 +21,15 @@ function CardBlok({name, imageUrl}) {
        </div>
 
        <div class="section__card-title">{name}</div>
-       <div class="section__card-price">1200 P</div>
+       <div class="section__card-price">{price} P</div>
        <div class="section__card-size">
-         <button
-           class="section__card-size-item section__card-size-item_active"
-         >
-           M
-         </button>
-         <button class="section__card-size-item">S</button>
-         <button class="section__card-size-item">L</button>
+
+         {sizes.map((size, index)=>(
+           <button className={classNames("section__card-size-item", activeSize===index ? "section__card-size-item_active" : '')}
+           onClick={()=>onSelectSize(index)}
+           >{size}</button>
+         ))}  
+
        </div>
        
        <button class="section__card-btn" type="button">в корзину</button>
@@ -30,4 +39,13 @@ function CardBlok({name, imageUrl}) {
 
 }
 
+CardBlok.propTypes= {
+  name: propTypes.string.isRequired,
+  price: propTypes.number.isRequired,
+  sizes: propTypes.arrayOf(propTypes.string).isRequired,
+  imageUrl: propTypes.string.isRequired
+}
+
 export default CardBlok
+
+
