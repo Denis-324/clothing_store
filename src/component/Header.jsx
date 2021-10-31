@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 
@@ -10,15 +11,15 @@ function Header() {
        <div className="header__phone">
          <a href="tel:88000000000">+7 (800) 000-00-00</a>
        </div>
-       <div className="header__logo"><a href="#">goods</a></div>
-       <a href="#" className="header__cart">
+       <div className="header__logo"><Link to="/">goods</Link></div>
+       <Link to="/cart" className="header__cart">
          <div className="header__cart-body">
            <div className="header__cart-title"><span>корзина пуста</span></div>
            <div className="header__cart-img-body">
              <div className="header__cart-img"><span>3</span></div>
            </div>
          </div>
-       </a>
+       </Link>
      </div>
    </div>
  </header>   

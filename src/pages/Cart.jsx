@@ -1,4 +1,5 @@
 import React from "react";
+import tShits2 from '../img/goods/tShits2.jpg'
 
 
 
@@ -6,10 +7,11 @@ import React from "react";
 function Cart() {
   return (
       <>
-     <div className="full-cart">
+      
+        <div className="full-cart">
           <section className="full-cart__item">
             <div className="full-cart__item-img">
-              <img src="./img/goods/tShits2.jpg" alt="" />
+              <img src={tShits2} alt="" />
             </div>
             <div className="full-cart__item-text">
               <div className="full-cart__item-title">
@@ -31,7 +33,9 @@ function Cart() {
           </section>
           <button className="payment-btn" type="button">Оплатить</button>
         </div>
-  </>
+     
+        
+    </>
    
   )
 

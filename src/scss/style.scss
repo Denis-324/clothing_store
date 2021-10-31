@@ -13,20 +13,17 @@ body {
 }
 
 .wrapper {
-  width: 100%;
-  min-height: 100%;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
 }
 
 .main {
   flex: 1 1 auto;
-  max-width: 1220px;
-  padding: 0 20px;
-  margin: 0 auto;
 }
 .content {
+  margin: 0 auto;
   margin-top: 93px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -40,7 +37,7 @@ body {
   }
 }
 .container {
-  max-width: 1220px;
+  max-width: 850px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -74,6 +71,9 @@ body {
     font-size: 45px;
     font-weight: 800;
     letter-spacing: 4px;
+    a {
+      color: #59225e;
+    }
     @media (max-width: 632px) {
       font-size: 30px;
       letter-spacing: 2px;
@@ -162,67 +162,9 @@ body {
   }
 }
 //================================================
-.footer {
-  margin-top: 20px;
-  background-color: rgb(76, 147, 206);
-  min-height: 70px;
-  @include adaptiv-value("min-height", 70, 50, 1);
-
-  &__row {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &__contscts {
-    min-height: 70px;
-    display: flex;
-    width: 340px;
-    justify-content: space-between;
-    align-items: center;
-    @include adaptiv-value("min-height", 70, 50, 1);
-  }
-
-  &__phone {
-    font-size: 16px;
-    font-family: $ff-m;
-    color: whitesmoke;
-    font-weight: 500;
-  }
-
-  &__instagram {
-    display: block;
-    width: 26px;
-    height: 26px;
-    background: url("../img/instagram-dark.svg") center no-repeat;
-    transition: all 0.3s ease 0s;
-  }
-
-  &__vk {
-    display: block;
-    width: 26px;
-    height: 26px;
-    background: url("../img/vk-dark.svg") center no-repeat;
-    transition: all 0.3s ease 0s;
-  }
-
-  &__facebook {
-    display: block;
-    width: 26px;
-    height: 26px;
-    background: url("../img/fb-dark.svg") center no-repeat;
-    transition: all 0.3s ease 0s;
-  }
-  &__instagram:hover,
-  &__vk:hover,
-  &__facebook:hover {
-    border-radius: 50%;
-    transform: scale(1.4);
-    transition: all 0.3s ease 0s;
-  }
-}
-//================================================
 .menu {
   margin-top: 50px;
+
   @media (max-width: 632px) {
     margin-top: 17px;
   }
@@ -257,23 +199,30 @@ body {
   &__link {
     color: #151719;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 0.1s ease 0s;
     font-weight: 600;
     white-space: nowrap;
+    background-color: #fff;
     @media (max-width: 468px) {
       font-size: 13px;
     }
   }
 
+  &__link_active {
+    color: #59225e;
+    font-weight: 800;
+  }
+
   &__link:hover {
-    color: #7f8d9b;
-    transition: all 0.2s ease 0s;
+    color: #5f90c2;
+    transition: all 0.1s ease 0s;
   }
 
   &__link_lh {
     line-height: 1.8;
   }
   &__sort {
+    cursor: pointer;
     position: relative;
   }
   &__sort-subtitle {
@@ -294,37 +243,25 @@ body {
       display: none;
     }
   }
-  &__sort-subtitle::before {
-    content: "";
-    position: absolute;
-    top: 3px;
-    left: -140px;
-    width: 9px;
-    height: 9px;
-    border-bottom: 2px solid #000;
-    border-right: 2px solid #000;
-    transform: rotate(45deg);
-    @media (max-width: 468px) {
-      left: -17px;
-      top: 1.5px;
-    }
-  }
+
   &__sort-popup {
     position: absolute;
     top: 30px;
     right: 0;
     padding: 10px;
     box-shadow: 2px 2px 5px 5px rgba(155, 169, 218, 0.2);
-    opacity: 0;
-    visibility: hidden;
+    // opacity: 0;
+    // visibility: hidden;
   }
 }
 //================================================
 .section {
   &__card {
+    margin: 0 auto;
     padding: 15px;
     border: 1px solid rgb(207, 203, 203);
     border-radius: 5px;
+    width: 250px;
   }
 
   &__card-img {
@@ -385,6 +322,8 @@ body {
 }
 //================================================
 .empty-cart {
+  text-align: center;
+  padding: 0 20px;
   &__title {
     font-size: 30px;
     font-weight: 500;
@@ -399,11 +338,9 @@ body {
   }
 
   &__img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 300px;
     height: 300px;
+    margin: 0 auto;
     background: url("../img/emptyСart.png") 0 0 / cover no-repeat;
     @media (max-width: 400px) {
       width: 240px;
@@ -413,6 +350,10 @@ body {
 }
 //================================================
 .full-cart {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 20px;
+
   margin-top: 40px;
 
   &__item {
@@ -524,4 +465,64 @@ body {
 .payment-btn:hover {
   background-color: rgb(104, 165, 214);
   transition: all 0.2s ease 0s;
+}
+//================================================
+.footer {
+  margin-top: 20px;
+  background-color: rgb(76, 147, 206);
+  min-height: 70px;
+
+  @include adaptiv-value("min-height", 70, 50, 1);
+
+  &__row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__contscts {
+    min-height: 70px;
+    display: flex;
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    @include adaptiv-value("min-height", 70, 50, 1);
+  }
+
+  &__phone {
+    font-size: 16px;
+    font-family: $ff-m;
+    color: whitesmoke;
+    font-weight: 500;
+  }
+
+  &__instagram {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/instagram-dark.svg") center no-repeat;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__vk {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/vk-dark.svg") center no-repeat;
+    transition: all 0.3s ease 0s;
+  }
+
+  &__facebook {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url("../img/fb-dark.svg") center no-repeat;
+    transition: all 0.3s ease 0s;
+  }
+  &__instagram:hover,
+  &__vk:hover,
+  &__facebook:hover {
+    border-radius: 50%;
+    transform: scale(1.4);
+    transition: all 0.3s ease 0s;
+  }
 }
