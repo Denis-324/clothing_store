@@ -2,12 +2,13 @@
 import classNames from 'classnames'
 import React from 'react'
 
-const Categories = ({items}) => {
+const Categories = React.memo(function Categories ({items, onClickItem})  {
    const [activeItem, setActiveItem] =  React.useState(null)
 
    //функция переключения меню, с неактивного на активное
    const onSelectItem = (index) =>{
       setActiveItem(index)
+      onClickItem(index)
    }
 
    return (
@@ -24,6 +25,6 @@ const Categories = ({items}) => {
  
        </ul>
    )
-}
+})
 
 export default Categories

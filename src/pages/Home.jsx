@@ -1,10 +1,15 @@
 import React from "react";
+import { useSelector} from "react-redux";
 import {CardBlok, Nav  } from "../component";
 
 
 
 
-function Home({items}) {
+
+function Home() {
+// Достаем данные из стейта
+  const  items  = useSelector(({ goods }) => goods.items  )
+
   return (
       <>
       

@@ -3,7 +3,7 @@ import classNames from 'classnames'
 import React from 'react'
 
 
-const SortPopup = ({items}) => {
+const SortPopup = React.memo(function SortPopup ({items}) {
    const [visibliPopup, setVisibliPopup] = React.useState(false)
    const [activeItem, setActiveItem] =  React.useState(0)
 
@@ -50,6 +50,6 @@ const SortPopup = ({items}) => {
          </div>}
       </ul>
    )
-}
-//className="menu__link menu__link_lh"
+}) 
+
 export default SortPopup
