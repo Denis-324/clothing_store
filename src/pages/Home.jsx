@@ -11,7 +11,7 @@ function Home({items}) {
         <Nav />  
         <div className="container">
           <div className="content">
-            {items.map(obj=><CardBlok key={obj.id} {...obj}/>)}
+            {items && items.map(obj=><CardBlok key={obj.id} {...obj}/>)}
           
           </div>
         </div>

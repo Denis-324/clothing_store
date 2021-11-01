@@ -15,9 +15,9 @@ function Nav() {
          'куртки'
        ]}/>
        <SortPopup items = {[
-         'популярности',
-         'цене',
-       ]}/>
+         {name:'популярности', type: 'popylar'},
+         {name: 'цене', type: "price"},
+        ]}/>
      </div>
    </div>
  </nav> 

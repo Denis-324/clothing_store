@@ -8,7 +8,7 @@ const SortPopup = ({items}) => {
    const [activeItem, setActiveItem] =  React.useState(0)
 
    //сохраняем в перменную  значение по чему будет происходить сортировка (сортировать по: aciveLable)
-   const aciveLable = items[activeItem]
+   const aciveLable = items[activeItem].name
    
    // перменная в которой хранится ссылка на модальное окно
    const sortRef = React.useRef()
@@ -40,12 +40,12 @@ const SortPopup = ({items}) => {
          <span className="menu__sort-subtitle ">{aciveLable}</span>
          {visibliPopup && <div className="menu__sort-popup">
 
-         {items && items.map((name, index) =>
+         {items && items.map((obj, index) =>
          (<li><button 
          className={classNames('menu__link menu__link_lh', activeItem === index ? "menu__link_active" : '')}
          onClick={()=>onSelectItem(index)}
-         key={`${name}_${index}`} 
-         >{name}</button></li>))}
+         key={`${obj.type}_${index}`} 
+         >{obj.name}</button></li>))}
            
          </div>}
       </ul>
