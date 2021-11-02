@@ -4,9 +4,15 @@ import propTypes from 'prop-types'
 
 
 
-function CardBlok({name, imageUrl, price, sizes}) {
+
+
+
+
+function CardBlok({name, imageUrl, price, sizes, isLoding}) {
 
   const [activeSize, setAciveSize] = React.useState([0])
+
+
 
   //функция для выбора рахмера товара
   const onSelectSize = (index) => {

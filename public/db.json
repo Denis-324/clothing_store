@@ -6,6 +6,7 @@
        "name": "Футболка Slim из хлопка ",
        "sizes": ["M", "S", "L"],
        "price": 1190,
+       "rating": 1,
        "category": 0
      },
      {
@@ -14,6 +15,7 @@
        "name": "Упаковка 3 футболки Slim",
        "sizes": ["M", "S", "L"],
        "price": 1699,
+       "rating": 2,
        "category": 0
      },
      {
@@ -22,6 +24,7 @@
        "name": "Футболка из хлопка премиум",
        "sizes": ["M", "S", "L"],
        "price": 1199,
+       "rating": 3,
        "category": 0
      },
      {
@@ -30,6 +33,7 @@
        "name": "Футболка Relaxed Fit",
        "sizes": ["M", "S", "L"],
        "price": 899,
+       "rating": 4,
        "category": 0
      },
      {
@@ -38,6 +42,7 @@
        "name": "Упаковка 2 худи Relaxed Fit",
        "sizes": ["M", "S", "L"],
        "price": 3499,
+       "rating": 5,
        "category": 1
      },
      {
@@ -46,6 +51,7 @@
        "name": "Худи из хлопка",
        "sizes": ["M", "S", "L"],
        "price": 2799,
+       "rating": 6,
        "category": 1
      },
      {
@@ -54,6 +60,7 @@
        "name": "Худи",
        "sizes": ["M", "S", "L"],
        "price": 1699,
+       "rating": 7,
        "category": 1
      },
      {
@@ -62,6 +69,7 @@
        "name": "Худи из флиса",
        "sizes": ["M", "S", "L"],
        "price": 2799,
+       "rating": 8,
        "category": 1
      },
      {
@@ -70,6 +78,7 @@
        "name": "Хлопковые шорты-чиносы",
        "sizes": ["M", "S", "L"],
        "price": 1599,
+       "rating": 9,
        "category": 2
      },
      {
@@ -78,6 +87,7 @@
        "name": "Шорты для активного отдыха",
        "sizes": ["M", "S", "L"],
        "price": 1999,
+       "rating": 2,
        "category": 2
      },
      {
@@ -86,6 +96,7 @@
         "name": "Байковые шорты Regular Fit",
         "sizes": ["M", "S", "L"],
         "price": 1199,
+        "rating": 3,
         "category": 2
     },
     {
@@ -94,6 +105,7 @@
       "name": "Шорты для бега",
       "sizes": ["M", "S", "L"],
       "price": 1699,
+      "rating": 4,
       "category": 2
     },
     {
@@ -102,6 +114,7 @@
       "name": "Джинсы Loose",
       "sizes": ["M", "S", "L"],
       "price": 2299,
+      "rating": 5,
       "category": 3
     },
     {
@@ -110,6 +123,7 @@
       "name": "Джинсы Freefit® Slim",
       "sizes": ["M", "S", "L"],
       "price": 3999,
+      "rating": 6,
       "category": 3
     },
     {
@@ -118,6 +132,7 @@
       "name": "Джоггеры Hybrid Regular",
       "sizes": ["M", "S", "L"],
       "price": 3299,
+      "rating": 7,
       "category": 3
     },
     {
@@ -126,6 +141,7 @@
       "name": "Джинсы Fit на резинке",
       "sizes": ["M", "S", "L"],
       "price": 1999,
+      "rating": 8,
       "category": 3
     },
     {
@@ -134,6 +150,7 @@
       "name": "Утепленная куртка",
       "sizes": ["M", "S", "L"],
       "price": 2299,
+      "rating": 9,
       "category": 4
     },
     {
@@ -142,6 +159,7 @@
       "name": "Куртка из плюша Regular",
       "sizes": ["M", "S", "L"],
       "price": 2799,
+      "rating": 10,
       "category": 4
     },
     {
@@ -150,6 +168,7 @@
       "name": "Куртка-рубашка",
       "sizes": ["M", "S", "L"],
       "price": 4499,
+      "rating": 11,
       "category": 4
     },
     {
@@ -158,6 +177,7 @@
       "name": "Вельветовая куртка",
       "sizes": ["M", "S", "L"],
       "price": 3999,
+      "rating": 12,
       "category": 4
     }
    ]
