@@ -1,7 +1,7 @@
 import React from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 
-import { setCategory } from "../redux/action/filters";
+import { setCategory, setSortBy } from "../redux/action/filters";
 import {Categories, SortPopup} from "./index";
 
 
@@ -19,30 +19,42 @@ const sortItems = [
  ]
 
 function Nav() {
-
+   
   const dispatch = useDispatch();
+  // const items = useSelector(({ goods }) => goods.items);
+
+  const  {category, sortBy}  = useSelector(({ filters }) => filters  )
+  
+ 
 
   //функция которая передает index в стор при клике на меню
   const onSelectCategory = React.useCallback((index)=>{
     dispatch(setCategory(index))
   },[])
     
-  
+  const onSelectSortType = React.useCallback((type) => {
+    dispatch(setSortBy(type));
+  }, []);
 
   
   return (
+    
    <nav className="menu">
    <div className="menu__container">
      <div className="menu__flex">
        <Categories
-       onClickItem={onSelectCategory}
+         activeCategory={category}
+       onClickCategory={onSelectCategory}
         items = {categoryNames}/>
-       <SortPopup items = {sortItems}/>
+       <SortPopup
+       activeSortType={sortBy.type}
+       items={sortItems}
+       onClickSortType={onSelectSortType}/>
      </div>
    </div>
  </nav> 
   )
-
+  
 }
 
 export default Nav;
