@@ -6,7 +6,6 @@ export const setLoaded = (payload) => ({
 });
 
 export const fetchGoods = (category, sortBy) => (dispatch) => {
-  console.log(sortBy);
   dispatch(setLoaded(false));
   axios
     .get(

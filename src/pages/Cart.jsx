@@ -17,7 +17,7 @@ function Cart() {
               <div className="full-cart__item-title">
                 футолка летня коллекция <span>M</span>
               </div>
-              <div className="full-cart__item-subtitle">1200 P</div>
+              <div className="full-cart__item-subtitle">11200 P</div>
             </div>
             <div className="full-cart__item-count">
               <button className="full-cart__item-count-minus">-</button>

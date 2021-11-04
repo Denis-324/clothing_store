@@ -2,22 +2,25 @@ import classNames from "classnames";
 import React from "react";
 import propTypes from 'prop-types'
 
+function CardBlok({id, name, imageUrl, price, sizes,  onClickAddGoods, addedCount}) {
 
-
-
-
-
-
-function CardBlok({name, imageUrl, price, sizes, isLoding}) {
-
-  const [activeSize, setAciveSize] = React.useState([0])
-
-
+  const [activeSize, setAciveSize] = React.useState(0)
 
   //функция для выбора рахмера товара
   const onSelectSize = (index) => {
     setAciveSize(index)
   }
+
+ const onAddGoods = () => {
+   const obj = {
+    id,
+    name,
+    imageUrl,
+    price,
+    size:sizes[activeSize],
+   }
+  onClickAddGoods(obj)
+ }
 
   return (
    
@@ -38,7 +41,7 @@ function CardBlok({name, imageUrl, price, sizes, isLoding}) {
 
        </div>
        
-       <button class="section__card-btn" type="button">в корзину</button>
+       <button onClick={onAddGoods} class="section__card-btn" type="button">в корзину {addedCount} </button>
     </section>
      
   )

@@ -1,7 +1,3 @@
-// const initialState = {
-//   category: null,
-//   sortBy: "popular",
-// };
 const initialState = {
   category: null,
   sortBy: {

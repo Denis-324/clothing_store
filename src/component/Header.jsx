@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { useSelector} from "react-redux";
+import { number } from "prop-types";
+import { string } from "prop-types";
 
 
 function Header() {
+  
+  const {totalPrice, totalCount} = useSelector(({cart})=>(cart))
+
   return (
    <header className="header">
    <div className="header__container">
@@ -14,9 +19,9 @@ function Header() {
        <div className="header__logo"><Link to="/">goods</Link></div>
        <Link to="/cart" className="header__cart">
          <div className="header__cart-body">
-           <div className="header__cart-title"><span>корзина пуста</span></div>
+           <div className="header__cart-title"><span>{totalPrice}</span></div>
            <div className="header__cart-img-body">
-             <div className="header__cart-img"><span>3</span></div>
+             <div className="header__cart-img"><span>{totalCount}</span></div>
            </div>
          </div>
        </Link>

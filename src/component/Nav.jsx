@@ -19,6 +19,7 @@ const sortItems = [
  ]
 
 function Nav() {
+  
    
   const dispatch = useDispatch();
   // const items = useSelector(({ goods }) => goods.items);
