@@ -4,7 +4,6 @@ import {useDispatch, useSelector} from "react-redux";
 import { setCategory, setSortBy } from "../redux/action/filters";
 import {Categories, SortPopup} from "./index";
 
-
 const categoryNames = [
   'футболки',
   'худи',
@@ -18,17 +17,10 @@ const sortItems = [
   {name: 'цене', type: "price"},
  ]
 
-function Nav() {
-  
-   
+function Nav() { 
   const dispatch = useDispatch();
-  // const items = useSelector(({ goods }) => goods.items);
-
   const  {category, sortBy}  = useSelector(({ filters }) => filters  )
-  
- 
 
-  //функция которая передает index в стор при клике на меню
   const onSelectCategory = React.useCallback((index)=>{
     dispatch(setCategory(index))
   },[])

@@ -6,7 +6,6 @@ function CardBlok({id, name, imageUrl, price, sizes,  onClickAddGoods, addedCoun
 
   const [activeSize, setAciveSize] = React.useState(0)
 
-  //функция для выбора рахмера товара
   const onSelectSize = (index) => {
     setAciveSize(index)
   }
@@ -24,24 +23,24 @@ function CardBlok({id, name, imageUrl, price, sizes,  onClickAddGoods, addedCoun
 
   return (
    
-   <section class="section__card">
-       <div class="section__card-img">
+   <section className="section__card">
+       <div className="section__card-img">
          <img src={imageUrl} alt="" />
        </div>
 
-       <div class="section__card-title">{name}</div>
-       <div class="section__card-price">{price} P</div>
-       <div class="section__card-size">
+       <div className="section__card-title">{name}</div>
+       <div className="section__card-price">{price} P</div>
+       <div className="section__card-size">
 
          {sizes.map((size, index)=>(
-           <button className={classNames("section__card-size-item", activeSize===index ? "section__card-size-item_active" : '')}
+           <button key={`${size}_${index}`} className={classNames("section__card-size-item", activeSize===index ? "section__card-size-item_active" : '')}
            onClick={()=>onSelectSize(index)}
            >{size}</button>
          ))}  
 
        </div>
        
-       <button onClick={onAddGoods} class="section__card-btn" type="button">в корзину {addedCount} </button>
+       <button onClick={onAddGoods} className="section__card-btn" type="button">в корзину {addedCount} </button>
     </section>
      
   )

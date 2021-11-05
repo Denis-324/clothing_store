@@ -1,9 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector} from "react-redux";
-import { number } from "prop-types";
-import { string } from "prop-types";
-
 
 function Header() {
   

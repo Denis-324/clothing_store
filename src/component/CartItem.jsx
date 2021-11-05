@@ -1,15 +1,21 @@
 import React from "react";
-import tShits2 from '../img/goods/tShits2.jpg'
 
-
-function CartItem({id, name, size, price, totalPrice, totalCount, onRemove}) {
+function CartItem({id, name, img, size, price, totalPrice, totalCount, onRemove, onPlus, onMinus}) {
    const handleRemoClick = () => {
       onRemove(id)
    }
+
+const handlePlusItem = () => {
+   onPlus(id)
+}
+
+const handleMinusItem = () => {
+   onMinus(id)
+}
   return (
    <section className="full-cart__item">
             <div className="full-cart__item-img">
-              <img src={tShits2} alt="" />
+              <img src={img} alt="" />
             </div>
             <div className="full-cart__item-text">
               <div className="full-cart__item-title">
@@ -18,9 +24,9 @@ function CartItem({id, name, size, price, totalPrice, totalCount, onRemove}) {
               <div className="full-cart__item-subtitle">{price} P</div>
             </div>
             <div className="full-cart__item-count">
-              <button className="full-cart__item-count-minus">-</button>
+              <button onClick={handleMinusItem} className="full-cart__item-count-minus">-</button>
               <div className="full-cart__item-count-item">{totalCount}</div>
-              <button className="full-cart__item-count-plus">+</button>
+              <button onClick={handlePlusItem} className="full-cart__item-count-plus">+</button>
             </div>
             <div className="full-cart__item-price">{totalPrice} P</div>
             <button onClick={handleRemoClick} className="full-cart__item-delite"></button>
