@@ -2,7 +2,10 @@ import React from "react";
 import tShits2 from '../img/goods/tShits2.jpg'
 
 
-function CartItem({name, size, price, totalPrice, totalCount }) {
+function CartItem({id, name, size, price, totalPrice, totalCount, onRemove}) {
+   const handleRemoClick = () => {
+      onRemove(id)
+   }
   return (
    <section className="full-cart__item">
             <div className="full-cart__item-img">
@@ -20,7 +23,7 @@ function CartItem({name, size, price, totalPrice, totalCount }) {
               <button className="full-cart__item-count-plus">+</button>
             </div>
             <div className="full-cart__item-price">{totalPrice} P</div>
-            <button className="full-cart__item-delite"></button>
+            <button onClick={handleRemoClick} className="full-cart__item-delite"></button>
           </section>
   )
 
