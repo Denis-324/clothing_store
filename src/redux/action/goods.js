@@ -9,9 +9,9 @@ export const fetchGoods = (category, sortBy) => (dispatch) => {
   dispatch(setLoaded(false));
   axios
     .get(
-      `http://localhost:3001/goods?${
-        category !== null ? `category=${category}` : ""
-      }&_sort=${sortBy.type}&_order=asc`
+      `/goods?${category !== null ? `category=${category}` : ""}&_sort=${
+        sortBy.type
+      }&_order=asc`
     )
     .then(({ data }) => {
       dispatch(setGoods(data));

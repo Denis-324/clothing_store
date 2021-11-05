@@ -1,35 +1,32 @@
 import React from "react";
-import tShits2 from '../img/goods/tShits2.jpg'
+import { useSelector } from "react-redux";
+import { CartItem } from "../component";
+
 
 
 
 
 function Cart() {
+  const {totalPrice, totalCount, items} =  useSelector(({cart})=>cart)
+  const addedGoods = Object.keys(items).map(key=>{
+    return items[key].items[0]
+  })
+
   return (
       <>
       
         <div className="full-cart">
-          <section className="full-cart__item">
-            <div className="full-cart__item-img">
-              <img src={tShits2} alt="" />
-            </div>
-            <div className="full-cart__item-text">
-              <div className="full-cart__item-title">
-                футолка летня коллекция <span>M</span>
-              </div>
-              <div className="full-cart__item-subtitle">11200 P</div>
-            </div>
-            <div className="full-cart__item-count">
-              <button className="full-cart__item-count-minus">-</button>
-              <div className="full-cart__item-count-item">1</div>
-              <button className="full-cart__item-count-plus">+</button>
-            </div>
-            <div className="full-cart__item-price">1200 P</div>
-            <button className="full-cart__item-delite"></button>
-          </section>
+
+          {addedGoods.map((obj)=><CartItem 
+          name={obj.name} 
+          size={obj.size}
+          price={obj.price} 
+          totalPrice={items[obj.id].totalPrice} 
+          totalCount={items[obj.id].items.length}/>)}
+          
           <section className="total">
-            <div className="total__count">Итого: 1200 P</div>
-            <div className="total__sum">Количество товаров: 1 шт</div>
+            <div className="total__count">Итого: {totalPrice} P</div>
+            <div className="total__sum">Количество товаров: {totalCount} шт</div>
           </section>
           <button className="payment-btn" type="button">Оплатить</button>
         </div>

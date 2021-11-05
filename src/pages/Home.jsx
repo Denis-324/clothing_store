@@ -30,7 +30,7 @@ function Home() {
         <div className="container">
           <div className="content">
             {isLoaded ? items.map(obj=><CardBlok
-            addedCount={cartItems[obj.id] && cartItems[obj.id].length}
+            addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
              onClickAddGoods={(handleAddGoodsToCart)}
              key={obj.id} isLoading={true} {...obj}/>) :
              Array(20).fill(0).map((_, index) =><GoodsLoadingBlok key={index} />) }
